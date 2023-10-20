@@ -22,8 +22,6 @@ def main():
     st.write("To test, first select some fields then click the button below.")
   
 
-    name = 'Sam'
-    booking_link = 'tslbooking.com'
     name = st.text_input('Bot Name', value = 'Sam')
     lead_first_name = st.text_input('Lead First Name', value = 'John')
     booking_link = st.text_input('Booking Link', value = 'https://go.oncehub.com/book-gerrit')
