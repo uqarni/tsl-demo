@@ -27,11 +27,12 @@ def main():
     booking_link = st.text_input('Booking Link', value = 'https://go.oncehub.com/book-gerrit')
     system_prompt = bot_info['system_prompt']
     initial_text = bot_info['initial_text']
+    reschedule_link = 'oncehub.com/reschedule'
     
 
     
     if st.button('Click to Start or Restart'):
-        system_prompt = system_prompt.format(lead_first_name=lead_first_name, booking_link = booking_link, name=name)
+        system_prompt = system_prompt.format(reschedule_link = reschedule_link, lead_first_name=lead_first_name, booking_link = booking_link, name=name)
 
         initial_text = initial_text.format(lead_first_name = lead_first_name, name=name)
 
